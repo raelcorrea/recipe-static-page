@@ -1,0 +1,136 @@
+.hero {
+  box-sizing: border-box;
+  margin-top: 2.5rem;
+  position: relative;
+  &__container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1280px;
+    @include desktop{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__figure {
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    background-color: var(--c-cyan);
+    overflow: hidden;
+    @include mobile{
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    @include tablet{
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 25px;
+    }
+  }
+  &__image {
+    width: 100%;
+    @include desktop {
+        width: 50%;
+    }
+  }
+  &__handpicked {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 90px;
+    @include desktop {
+        width: auto;
+        right: auto;
+        left: 50%;
+        margin-left: -75px;
+        top: 2rem;
+    }
+  }
+  &__caption {
+    padding: 1rem 1rem 2rem;
+    @include desktop {
+      padding: 3rem;
+      width: 50%;
+    }
+  }
+  &__category {
+    background-color: var(--c-white);
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--c-black);
+  }
+  &__title {
+    font-size: 2.5rem;
+    margin: 2rem 0 1.5rem;
+    @include desktop {
+        font-size: 3.5rem;
+    }
+  
+  }
+  &__text {
+    font-size: 1rem;
+    color: var(--c-silver);
+    line-height: 1.75rem;
+  }
+  &__badge {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1rem;
+    @include desktop{
+        margin: 2rem 0 0;
+    }
+    &Item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.05);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 0.875rem;
+      gap: 0.5rem;
+    }
+  }
+  &__author {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  &__button {
+    display: flex;
+    margin: 0;
+    padding: 18px 36px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--c-black);
+    color: var(--c-white);
+    gap: 1rem;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__groupCta{
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+  }
+}

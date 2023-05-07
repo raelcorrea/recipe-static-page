@@ -1,0 +1,89 @@
+.card{
+    margin-top: 11.625rem;
+    box-sizing: border-box;
+
+    &__list{
+        display: flex;
+        padding: 0;
+        margin: 96px 0 0;
+        list-style: none;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+        &--cyan{
+            background: var(--c-dg-cyan);
+        }
+        @include desktop{
+            width: 32%;
+        }
+    }
+
+    &__link{
+        color:var(--c-black);
+        text-decoration: none;      
+    }
+
+    &__thumbnail{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        border-radius: 20px;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        margin: 0 0 1.5rem;
+    }
+
+    &__plateTime{
+        display: flex;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+    }
+    &__plateTimeItem{
+        display: flex;
+        gap: 0.3rem;
+        justify-content: start;
+        align-items: center;
+    }
+
+    &__header{
+        display: block;
+        &--inline{
+            @include desktop{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+
+    &__list--four-column{
+        margin-top: 5rem;
+        .card__thumbnail{
+            margin: 0 0 1rem;
+        }
+        .card__item{
+            @include desktop{
+                width: 23%;
+            }
+        }
+        .card__title{
+            font-size:1.125rem;
+            line-height: 1.625rem;
+            margin: 0 0 1rem;
+        }
+        .card__plateTime{
+            font-size: .875rem;
+        }
+    }
+}

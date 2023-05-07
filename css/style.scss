@@ -1,0 +1,20 @@
+@import '../node_modules/normalize.css/normalize';
+
+@import 'utils/colors';
+@import 'utils/typography';
+@import 'utils/layout';
+
+@import 'blocks/session';
+@import 'blocks/button';
+@import 'blocks/navigation';
+@import 'blocks/menu';
+@import 'blocks/socialMenu';
+@import 'blocks/heros';
+@import 'blocks/category';
+@import 'blocks/card';
+@import 'blocks/shortArticle';
+@import 'blocks/instagram';
+@import 'blocks/newsletter';
+
+@import '../node_modules/@splidejs/splide/src/css/themes/default/index.scss';
+@import '../node_modules/@splidejs/splide/src/css/core/index.scss';

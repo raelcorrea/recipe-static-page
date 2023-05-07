@@ -1,0 +1,64 @@
+.socialMenu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__item{
+        display: inline-block;
+    }
+
+    &__links{
+        display: flex;
+        line-height: 1rem;
+        padding: 1rem;
+        width: 5px;
+        height: 5px;
+        text-align: center;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        img{
+            -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+            filter: invert(100%);
+            @include desktop{
+                -webkit-filter: invert(0); /* safari 6.0 - 9.0 */
+                filter: invert(0);
+            }
+        }
+
+        &--facebook:hover{
+            @include desktop{
+                background-color: #148aec;
+                img{
+                    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        &--twitter:hover{
+            @include desktop{
+                background-color: #229bec;
+                img{
+                    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        &--instagram:hover{
+            @include desktop{
+                background-color: #c1558b;
+                img{
+                    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+                    filter: invert(100%);
+                }
+            }
+        }
+
+    }
+}

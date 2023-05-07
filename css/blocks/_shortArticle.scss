@@ -1,0 +1,41 @@
+.shortArticle{
+    margin: 8.9375rem 0 0;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        @include desktop{
+            width: 50%;
+        }
+    }
+    &__caption{
+        @include desktop{
+            width: 50%;
+        }
+    }
+
+    &__title{
+        font-size:1.5rem;
+        font-weight: 600;
+        margin:1.5rem 0;
+        @include desktop{
+            font-size:3rem;
+        }
+    }
+    &__text{
+        color:var(--c-silver);
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin: 0 0 1.75rem;
+    }
+
+
+}

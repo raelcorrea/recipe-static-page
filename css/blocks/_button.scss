@@ -1,0 +1,28 @@
+.button{
+    border-radius: 0.5rem;
+    background-color:var(--c-cyan);
+    font-size:.875rem;
+    display: inline-block;
+    padding:10px 14px;
+    color:#000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: linear 300ms;
+    @include desktop{
+        border-radius: 1rem;
+        padding:20px 27px;
+        font-size:1rem;
+    }
+    &:hover{
+        background-color: var(--c-black);
+        color:var(--c-white);
+    }
+    &--black{
+        background-color: var(--c-black);
+        color:var(--c-white);
+        &:hover{
+            background-color:var(--c-cyan);
+            color:var(--c-black);
+        }
+    }
+}
